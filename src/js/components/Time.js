@@ -24,13 +24,13 @@ export default class Time extends Component {
       hour: "numeric",
       minute: "numeric",
       // second: "numeric",
-      timeZone: "Europe/London",
+      timeZone: "Asia/Kolkata", // Updated to Indian Standard Time
     };
-
+  
     const time = new Intl.DateTimeFormat([], options).format(new Date());
-
+  
     return time;
-  }
+  }  
 
   get formattedTime() {
     const time = this.currentTime;
